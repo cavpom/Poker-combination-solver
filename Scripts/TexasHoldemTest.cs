@@ -37,9 +37,9 @@ public class TexasHoldemTest : MonoBehaviour
 
 	private void RunTestItteration()
 	{
-		List<Card> table = deck.GetCards(2);
-		List<Card> hand_a = deck.GetCards(5);
-		List<Card> hand_b = deck.GetCards(5);
+		List<Card> table = deck.GetCards(5);
+		List<Card> hand_a = deck.GetCards(2);
+		List<Card> hand_b = deck.GetCards(2);
 		
 		Debug.Log(string.Join(",", new List<Card>(table).ConvertAll<string>(e => e.ToString()).ToArray()));
 		Debug.Log("A: " + string.Join(",", new List<Card>(hand_a).ConvertAll<string>(e => e.ToString()).ToArray()));
