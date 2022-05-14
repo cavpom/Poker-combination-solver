@@ -14,15 +14,15 @@ public class TexasHoldemTest : MonoBehaviour
 	{
 		solver = new PokerCombinationSolver();
 
-		solver.RegisterCombination(new CombinationRoyalFlush()		.SetRank(9)	);
+		solver.RegisterCombination(new CombinationRoyalFlush()		.SetRank(9) );
 		solver.RegisterCombination(new CombinationStraightFlush()	.SetRank(8) );
 		solver.RegisterCombination(new CombinationFourOfAKind()		.SetRank(7) );
 		solver.RegisterCombination(new CombinationFullHouse()		.SetRank(6) );
-		solver.RegisterCombination(new CombinationFlush()			.SetRank(5) );
+		solver.RegisterCombination(new CombinationFlush()		.SetRank(5) );
 		solver.RegisterCombination(new CombinationStraight()		.SetRank(4) );
 		solver.RegisterCombination(new CombinationThreeOfAKind()	.SetRank(3) );
 		solver.RegisterCombination(new CombinationTwoPairs()		.SetRank(2) );
-		solver.RegisterCombination(new CombinationPair()			.SetRank(1) );
+		solver.RegisterCombination(new CombinationPair()		.SetRank(1) );
 		solver.RegisterCombination(new CombinationHighCard()		.SetRank(0) );
 
 		deck = new Deck();
