@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class TexasHoldemTest : MonoBehaviour
 {
-	public int Itterations;
+	public int Itterations = 10;
 	private PokerCombinationSolver solver;
 	private Deck deck;
 
